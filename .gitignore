@@ -1,0 +1,7 @@
+node_modules
+backend/public
+.DS_Store
+dist
+.env
+yarn-error.log
+build

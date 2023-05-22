@@ -1,0 +1,29 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "pnpm@7.32.2",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint --ext .tsx --ext .ts .",
+    "lint:fix": "pnpm lint --fix",
+    "prettier:write": "prettier --write .",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.1",
+    "eslint": "^8.2.0",
+    "prettier": "^2.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "typescript": "^4.3.5"
+  }
+}
