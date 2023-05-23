@@ -2,11 +2,15 @@ import Vue from './core/vue';
 
 const $root = document.querySelector('#root');
 
-$root.textContent = '{{ message }}';
+$root.textContent = `
+  <div>{{ name }}</div> 
+  <div>{{ message }}</div>
+`;
 
 new Vue({
   el: '#root',
   data: {
-    message: '안녕하세요 Vue!',
+    name: '여러분',
+    message: '안녕하세요!',
   },
 });
