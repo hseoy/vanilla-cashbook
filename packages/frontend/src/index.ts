@@ -1,8 +1,12 @@
-let test = 'Hello World';
+import Vue from './core/vue';
 
-setTimeout(() => {
-  test += 1;
-  console.log(test);
-}, 1000);
+const $root = document.querySelector('#root');
 
-console.log(test);
+$root.textContent = '{{ message }}';
+
+new Vue({
+  el: '#root',
+  data: {
+    message: '안녕하세요 Vue!',
+  },
+});
