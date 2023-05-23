@@ -23,6 +23,14 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'no-new': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.test.*'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
   ignorePatterns: [
     'node_modules/',
     'dist',
